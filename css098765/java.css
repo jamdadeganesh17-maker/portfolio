@@ -1,0 +1,99 @@
+
+
+window.onscroll = function () {
+    let btn = document.getElementById("topBtn");
+
+    if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+let correctAnswer;
+
+// Generate Captcha
+function generateCaptcha() {
+
+    let type = Math.floor(Math.random() * 2);
+
+    if(type === 0){
+
+        let num1 = Math.floor(Math.random() * 10) + 1;
+        let num2 = Math.floor(Math.random() * 10) + 1;
+
+        document.getElementById("captchaQuestion").innerText =
+            `What is ${num1} + ${num2} ?`;
+
+        correctAnswer = (num1 + num2).toString();
+
+    } else {
+
+        let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let randomLetter =
+            letters[Math.floor(Math.random() * letters.length)];
+
+        document.getElementById("captchaQuestion").innerText =
+            `Type this letter: ${randomLetter}`;
+
+        correctAnswer = randomLetter;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    generateCaptcha();
+
+    document.getElementById("contactForm")
+    .addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        let userCaptcha =
+            document.getElementById("captchaAnswer")
+            .value
+            .trim();
+
+        if(userCaptcha.toUpperCase() !== correctAnswer.toUpperCase()){
+
+            alert("Captcha Incorrect!");
+
+            generateCaptcha();
+
+            return;
+        }
+
+        let name =
+            document.getElementById("name").value;
+
+        let email =
+            document.getElementById("email").value;
+
+        let message =
+            document.getElementById("message").value;
+
+        let whatsappNumber = "919272425625";
+
+        let text =
+`Hello Ganesh
+
+Name: ${name}
+
+Email: ${email}
+
+Message: ${message}`;
+
+        window.open(
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`,
+            "_blank"
+        );
+
+        generateCaptcha();
+    });
+});

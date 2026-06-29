@@ -1,0 +1,2811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ganesh Jamdade | Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+  background: #c2adc2;
+  color: #e5e7eb;
+}
+
+/* Background Video */
+
+#bg-video{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+z-index:-1;
+}
+
+/* Navbar */
+
+.navbar{
+background:#111827;
+}
+
+.navbar-brand{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8 !important;
+}
+
+.nav-link{
+color:white !important;
+margin-left:15px;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:#38bdf8 !important;
+}
+
+/* Hero */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+}
+
+.profile-img{
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+border:6px solid white;
+
+object-fit:cover;
+
+box-shadow:0 0 25px rgba(255,255,255,.5);
+
+transition:.5s;
+
+}
+
+.profile-img:hover{
+
+transform:scale(1.05);
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+font-weight:bold;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+margin-top:15px;
+
+}
+
+.btn-custom{
+
+padding:12px 30px;
+
+font-size:18px;
+
+border-radius:12px;
+
+}
+
+section{
+
+padding:80px 0;
+
+}
+
+h2{
+
+font-weight:bold;
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+h2::after{
+
+content:"";
+display:block;
+width:80px;
+height:4px;
+background:#0d6efd;
+margin:10px auto;
+border-radius:10px;
+
+}
+/* WhatsApp Button */
+
+.whatsapp-btn{
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    width: 75px;
+    height: 75px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 42px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+    z-index: 9999;
+    transition: .3s;
+}
+
+.whatsapp-btn:hover{
+    transform: scale(1.15);
+    background: #1ebe5d;
+    color: white;
+}
+/* Back To Top Button */
+
+#topBtn{
+    display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+    z-index: 9999;
+    transition: .3s;
+}
+
+#topBtn:hover{
+    transform: scale(1.15);
+    background: #084298;
+}
+
+/* ===============================
+   PROFESSIONAL PORTFOLIO DESIGN
+================================ */
+
+
+body{
+transition:0.5s;
+}
+
+
+/* Glass Navbar */
+
+.navbar{
+background:rgba(15,23,42,0.75)!important;
+backdrop-filter:blur(15px);
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+
+.nav-link{
+font-weight:600;
+position:relative;
+}
+
+
+.nav-link::after{
+
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:0;
+height:3px;
+background:#38bdf8;
+transition:.4s;
+
+}
+
+
+.nav-link:hover::after{
+
+width:100%;
+
+}
+
+
+
+/* Hero Upgrade */
+
+.hero{
+  background: radial-gradient(circle at top,
+    rgba(56,189,248,0.25),
+    transparent 60%);
+}
+
+
+.hero h1{
+
+animation:fadeDown 1.2s;
+
+}
+
+
+
+@keyframes fadeDown{
+
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+/* Cards Professional - CYAN SHADOW ON HOVER */
+
+.card{
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  transition: all 0.4s ease;
+}
+
+
+.card:hover{
+
+transform:
+translateY(-12px)
+scale(1.02);
+
+box-shadow:
+0 0 30px rgba(56,189,248,0.4),
+0 0 60px rgba(56,189,248,0.2),
+0 20px 40px rgba(0,0,0,.25)!important;
+
+border-color: rgba(56,189,248,0.5);
+
+}
+
+
+
+/* Buttons */
+
+
+.btn{
+
+transition:.3s;
+
+}
+
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+
+
+/* Section Headings */
+
+
+h2{
+
+font-size:40px;
+letter-spacing:1px;
+
+}
+
+
+
+/* Skills */
+
+.progress{
+
+border-radius:20px;
+overflow:hidden;
+
+}
+
+
+.progress-bar{
+
+animation:load 2s;
+
+}
+
+
+@keyframes load{
+
+from{
+width:0;
+}
+
+}
+
+
+
+/* Contact Card */
+
+#contact .card{
+
+background:
+linear-gradient(
+135deg,
+#ffffff,
+#e0f2fe
+);
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+background:#020617;
+color:white;
+
+}
+
+
+footer h5{
+
+color:#38bdf8;
+
+}
+
+
+
+/* Cursor Glow */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:250px;
+height:250px;
+
+background:#38bdf8;
+
+border-radius:50%;
+
+filter:blur(120px);
+
+top:20%;
+left:20%;
+
+opacity:.25;
+
+z-index:-1;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+
+.profile-img{
+
+width:170px;
+height:170px;
+
+}
+
+
+h2{
+
+font-size:32px;
+
+}
+
+
+}
+/* =================================
+   PART 2 - PREMIUM UI EFFECTS
+================================= */
+
+
+/* Hero Image Glow */
+
+.profile-img{
+
+position:relative;
+
+animation:
+floatImage 4s ease-in-out infinite;
+
+}
+
+
+@keyframes floatImage{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+
+
+/* Name Gradient */
+
+.text-info{
+  background: linear-gradient(90deg,#38bdf8,#a855f7,#22c55e,#f97316);
+  background-size: 300% 300%;
+  animation: gradientMove 5s infinite;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+@keyframes gradientMove{
+  0%{background-position:0%;}
+  50%{background-position:100%;}
+  100%{background-position:0%;}
+}
+
+
+
+/* Project Cards */
+
+#projects .card{
+
+background:
+rgba(255,255,255,.85);
+
+backdrop-filter:blur(10px);
+
+}
+
+
+
+#projects .card i{
+
+transition:.4s;
+
+}
+
+
+#projects .card:hover i{
+
+transform:
+rotate(360deg)
+scale(1.2);
+
+}
+
+
+
+/* Section Animation */
+
+section{
+
+position:relative;
+
+}
+
+
+
+/* Contact Input */
+
+.form-control{
+
+border-radius:15px;
+
+padding:14px;
+
+border:2px solid #e5e7eb;
+
+transition:.3s;
+
+}
+
+
+.form-control:focus{
+
+border-color:#38bdf8;
+
+box-shadow:
+0 0 20px rgba(56,189,248,.4);
+
+}
+
+
+
+/* Google Translate */
+
+#google_translate_element{
+
+background:white;
+
+padding:5px;
+
+border-radius:10px;
+
+}
+
+
+
+/* WhatsApp Better */
+
+.whatsapp-btn{
+
+animation:
+pulse 2s infinite;
+
+}
+
+
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:
+0 0 0 0 rgba(37,211,102,.7);
+
+}
+
+
+70%{
+
+box-shadow:
+0 0 0 25px rgba(37,211,102,0);
+
+}
+
+
+100%{
+
+box-shadow:
+0 0 0 0 rgba(37,211,102,0);
+
+}
+
+}
+
+
+
+
+/* Top Button Animation */
+
+
+#topBtn{
+
+animation:
+floatBtn 2s infinite;
+
+}
+
+
+
+@keyframes floatBtn{
+
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+
+
+/* Achievement Number */
+
+#achievements h1{
+
+font-size:60px;
+
+animation:
+zoomNumber 1.5s infinite alternate;
+
+}
+
+
+
+@keyframes zoomNumber{
+
+
+from{
+
+transform:scale(1);
+
+}
+
+
+to{
+
+transform:scale(1.1);
+
+}
+
+}
+
+
+
+
+/* Mobile Navbar */
+
+@media(max-width:991px){
+
+
+.navbar-collapse{
+
+background:
+rgba(15,23,42,.95);
+
+padding:20px;
+
+border-radius:20px;
+
+margin-top:15px;
+
+
+}
+
+
+.nav-link{
+
+padding:12px;
+
+}
+
+
+}
+/* ==========================
+   ULTRA PREMIUM EFFECTS
+========================== */
+
+
+/* Glass Sections */
+
+section .container{
+    animation: sectionIn 1s ease;
+}
+
+
+@keyframes sectionIn{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+/* Hero Background Glow */
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:400px;
+height:400px;
+
+background:#38bdf8;
+
+border-radius:50%;
+
+filter:blur(150px);
+
+opacity:.35;
+
+}
+
+
+
+.hero{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+/* Neon Border Cards - UPDATED CYAN SHADOW */
+
+.card{
+
+border:1px solid rgba(56,189,248,.3)!important;
+
+}
+
+
+.card:hover{
+
+border-color:#38bdf8!important;
+
+box-shadow:
+0 0 30px rgba(56,189,248,0.5),
+0 0 60px rgba(56,189,248,0.25),
+0 20px 40px rgba(0,0,0,.3)!important;
+
+}
+
+
+
+/* Navbar Logo Animation */
+
+.navbar-brand{
+
+animation:logoGlow 2s infinite alternate;
+
+}
+
+
+@keyframes logoGlow{
+
+from{
+text-shadow:0 0 10px #38bdf8;
+}
+
+to{
+text-shadow:0 0 30px #a855f7;
+}
+
+}
+
+
+
+
+/* Buttons Neon */
+
+.btn{
+
+position:relative;
+overflow:hidden;
+
+}
+
+
+.btn::before{
+
+content:"";
+
+position:absolute;
+
+width:0;
+height:100%;
+
+left:0;
+top:0;
+
+background:white;
+
+opacity:.25;
+
+transition:.4s;
+
+}
+
+
+.btn:hover::before{
+
+width:100%;
+
+}
+
+
+
+
+/* Skill Progress Glow */
+
+.progress-bar{
+
+box-shadow:
+0 0 15px currentColor;
+
+}
+
+
+
+/* Image Ring */
+
+.profile-img{
+
+box-shadow:
+0 0 20px #38bdf8,
+0 0 50px #a855f7;
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+background:
+linear-gradient(
+135deg,
+#020617,
+#111827
+);
+
+}
+
+
+
+/* Mouse Glow */
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:30px;
+height:30px;
+
+border-radius:50%;
+
+background:#38bdf8;
+
+filter:blur(15px);
+
+pointer-events:none;
+
+left:var(--x);
+top:var(--y);
+
+z-index:99999;
+
+}
+
+
+
+/* Mobile Improvement */
+
+@media(max-width:768px){
+
+.whatsapp-btn,
+#topBtn{
+
+width:60px;
+height:60px;
+
+font-size:28px;
+
+}
+
+
+.hero h1{
+
+font-size:35px!important;
+
+}
+
+}
+#contact .card{
+
+backdrop-filter:blur(20px);
+
+background:
+rgba(255,255,255,.75);
+
+}
+.nav-link.active{
+
+color:#38bdf8!important;
+
+text-shadow:
+0 0 15px #38bdf8;
+
+}
+.particles{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index:-3;
+  animation: move 20s linear infinite;
+}
+
+@keyframes move{
+  from{transform:translateY(0);}
+  to{transform:translateY(-100px);}
+}
+.btn{
+  border-radius: 14px;
+  transition: 0.3s;
+  box-shadow: 0 0 0 transparent;
+}
+
+.btn:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+}
+.navbar-collapse{
+  backdrop-filter: blur(20px);
+}
+#skills .d-flex span{
+    color: #111827 !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+#myproject .d-flex span{
+    color: #111827 !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Projects Paragraph Color */
+
+#projects .card p{
+    color: #000000 !important;   /* Black */
+    font-size: 18px;
+    font-weight: 500;
+}
+/* ===== Premium Navbar ===== */
+
+.navbar{
+
+background:rgba(15,23,42,.75);
+
+backdrop-filter:blur(18px);
+
+padding:15px 0;
+
+transition:.4s;
+
+box-shadow:0 5px 25px rgba(0,0,0,.3);
+
+}
+
+.navbar-brand{
+
+font-size:30px;
+
+font-weight:700;
+
+color:#38bdf8!important;
+
+letter-spacing:1px;
+
+}
+
+.navbar-brand i{
+
+margin-right:8px;
+
+}
+
+.nav-link{
+
+color:white!important;
+
+font-size:17px;
+
+font-weight:600;
+
+margin-left:18px;
+
+position:relative;
+
+transition:.3s;
+
+}
+
+.nav-link i{
+
+margin-right:6px;
+
+}
+
+.nav-link::after{
+
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0;
+height:3px;
+background:#38bdf8;
+border-radius:20px;
+transition:.4s;
+
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+
+width:100%;
+
+}
+
+.nav-link:hover{
+
+color:#38bdf8!important;
+
+}
+
+.navbar .btn{
+
+font-weight:bold;
+
+border-radius:30px;
+
+padding:10px 22px;
+
+transition:.3s;
+
+}
+
+.navbar .btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 8px 20px rgba(56,189,248,.4);
+
+}
+
+@media(max-width:991px){
+
+.navbar-collapse{
+
+background:#111827;
+
+padding:20px;
+
+border-radius:15px;
+
+margin-top:15px;
+
+}
+
+.nav-link{
+
+padding:12px;
+
+margin-left:0;
+
+}
+
+.navbar .btn{
+
+margin-top:15px;
+
+width:100%;
+
+}
+
+}
+/* ===== AI HD Background ===== */
+
+body{
+    background:#020617;
+    overflow-x:hidden;
+}
+
+/* Moving Grid */
+
+.ai-grid{
+    position:fixed;
+    inset:0;
+    background:
+    linear-gradient(rgba(0,255,255,.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(0,255,255,.08) 1px,transparent 1px);
+    background-size:50px 50px;
+    animation:gridMove 8s linear infinite;
+    z-index:-5;
+}
+
+@keyframes gridMove{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(50px);
+}
+
+}
+
+/* Neon Glow */
+
+.glow{
+    position:fixed;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    filter:blur(130px);
+    z-index:-4;
+    animation:moveGlow 12s infinite alternate;
+}
+
+.glow1{
+background:#00e5ff;
+top:-150px;
+left:-100px;
+}
+
+.glow2{
+background:#7c3aed;
+bottom:-180px;
+right:-120px;
+}
+
+.glow3{
+background:#2563eb;
+top:40%;
+left:40%;
+}
+
+@keyframes moveGlow{
+
+100%{
+transform:translate(120px,-80px);
+}
+
+}
+
+/* Stars */
+
+.stars span{
+
+position:absolute;
+
+width:3px;
+
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+animation:twinkle 3s infinite;
+
+}
+
+.stars span:nth-child(1){top:10%;left:20%;}
+.stars span:nth-child(2){top:20%;left:70%;}
+.stars span:nth-child(3){top:35%;left:45%;}
+.stars span:nth-child(4){top:55%;left:85%;}
+.stars span:nth-child(5){top:75%;left:15%;}
+.stars span:nth-child(6){top:85%;left:60%;}
+.stars span:nth-child(7){top:15%;left:90%;}
+.stars span:nth-child(8){top:45%;left:5%;}
+.stars span:nth-child(9){top:60%;left:35%;}
+.stars span:nth-child(10){top:90%;left:80%;}
+
+@keyframes twinkle{
+
+0%,100%{
+opacity:.2;
+transform:scale(1);
+}
+
+50%{
+opacity:1;
+transform:scale(2.5);
+}
+
+}
+
+/* AI Name */
+
+.ai-text{
+
+font-size:65px;
+
+font-weight:bold;
+
+background:linear-gradient(90deg,#00e5ff,#00ff99,#7c3aed,#00e5ff);
+
+background-size:300%;
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+animation:shine 5s linear infinite;
+
+text-shadow:0 0 30px rgba(0,255,255,.5);
+
+}
+
+@keyframes shine{
+
+100%{
+background-position:300%;
+}
+
+}
+
+/* Premium Button */
+
+.ai-btn{
+
+padding:16px 45px;
+
+border-radius:50px;
+
+background:linear-gradient(45deg,#00e5ff,#2563eb);
+
+color:white;
+
+font-size:20px;
+
+font-weight:bold;
+
+border:none;
+
+transition:.4s;
+
+box-shadow:0 0 35px rgba(0,255,255,.6);
+
+}
+
+.ai-btn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 60px #00e5ff;
+
+}
+
+/* ===== SCROLL PROGRESS BAR ===== */
+#scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #38bdf8, #a855f7, #22c55e);
+    z-index: 99999;
+    transition: width 0.1s ease;
+    box-shadow: 0 0 20px rgba(56,189,248,0.5);
+}
+
+/* ===== TIMELINE ===== */
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    border-left: 3px solid #38bdf8;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #38bdf8;
+    box-shadow: 0 0 20px rgba(56,189,248,0.5);
+}
+.timeline-item .timeline-date {
+    color: #38bdf8;
+    font-weight: bold;
+    font-size: 14px;
+}
+.timeline-item h4 {
+    color: white;
+    margin-top: 5px;
+}
+.timeline-item p {
+    color: rgba(255,255,255,0.7);
+}
+
+/* ===== COUNTER ===== */
+.counter-number {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* ===== HIRE ME SECTION ===== */
+.hire-card {
+    background: linear-gradient(135deg, rgba(56,189,248,0.15), rgba(168,85,247,0.15));
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(56,189,248,0.3);
+    padding: 50px 30px;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.hire-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(56,189,248,0.4), 0 20px 60px rgba(56,189,248,0.2);
+    border-color: #38bdf8;
+}
+.hire-card .hire-icon {
+    font-size: 70px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+    animation: floatImage 4s ease-in-out infinite;
+}
+.hire-card h3 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.hire-card p {
+    color: rgba(255,255,255,0.7);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.hire-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 0 30px 0;
+}
+.hire-features .feature {
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+}
+.hire-features .feature i {
+    color: #38bdf8;
+    margin-right: 8px;
+}
+.hire-btn {
+    padding: 16px 50px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #38bdf8, #a855f7);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 30px rgba(56,189,248,0.3);
+}
+.hire-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(56,189,248,0.5);
+    color: white;
+}
+
+/* ===== VISITOR COUNTER ===== */
+.visitor-counter {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.visitor-counter i {
+    color: #38bdf8;
+    font-size: 24px;
+}
+.visitor-counter .visitor-number {
+    font-weight: bold;
+    font-size: 24px;
+    color: #38bdf8;
+    min-width: 80px;
+    display: inline-block;
+    text-align: center;
+}
+.visitor-counter .visitor-label {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.visitor-counter .visitor-divider {
+    color: rgba(255,255,255,0.2);
+}
+
+/* ===== SOCIAL ICONS - CONTACT INFO ===== */
+.contact-social {
+    margin-top: 20px;
+}
+.contact-social a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.04);
+    color: #1e293b;
+    font-size: 22px;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+.contact-social a:hover {
+    transform: translateY(-6px) scale(1.05);
+    background: #38bdf8;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(56,189,248,0.3);
+    border-color: #38bdf8;
+}
+.contact-social a i {
+    line-height: 50px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px) {
+    .counter-number {
+        font-size: 40px;
+    }
+    .hire-card {
+        padding: 30px 20px;
+    }
+    .hire-features {
+        gap: 15px;
+    }
+    .visitor-counter {
+        padding: 12px 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .visitor-counter .visitor-number {
+        font-size: 20px;
+        min-width: 60px;
+    }
+    .contact-social a {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .contact-social a i {
+        line-height: 44px;
+    }
+}
+#captchaAnswer{
+    width: 420px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+/* ===== MODAL CUSTOM ===== */
+.modal-content {
+    background: #0f172a;
+    color: #e5e7eb;
+    border: 1px solid rgba(56,189,248,0.3);
+    border-radius: 20px;
+}
+.modal-header {
+    border-bottom: 1px solid rgba(56,189,248,0.2);
+}
+.modal-footer {
+    border-top: 1px solid rgba(56,189,248,0.2);
+}
+.modal-title {
+    color: #38bdf8;
+}
+.modal-body img {
+    border-radius: 12px;
+    max-width: 100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Scroll Progress Bar -->
+<div id="scrollProgress"></div>
+
+<div class="ai-grid"></div>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+<div class="glow glow3"></div>
+
+<div class="stars">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+     
+<div class="particles"></div>
+<video autoplay muted loop id="bg-video">
+<source src="background.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<!-- =========================
+     Navigation Bar
+========================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">
+<i class="fas fa-code"></i> Ganesh Jamdade
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto align-items-lg-center">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#skills">Skills</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#education">Education</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#projects">Projects</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#certifications">Certificates</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#achievements">
+Achievement
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#resume">Resume</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+<li class="nav-item ms-lg-3">
+<div id="google_translate_element"></div>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- =========================
+     Hero Section
+========================= -->
+
+<section id="home" class="hero">
+
+<div class="container">
+
+<img src="ganesh.jpeg"
+class="profile-img mb-4"
+alt="Ganesh Jamdade">
+
+<h1 class="display-2 fw-bold">
+
+Hi, I'm
+
+<span class="text-info">
+Ganesh Jamdade
+</span>
+
+</h1>
+
+<h3 id="typing" class="mt-3"></h3>
+
+<div class="mt-4">
+
+<a href="#projects"
+class="btn btn-warning btn-lg shadow me-2">
+
+<i class="fas fa-code"></i>
+
+View Projects
+
+</a>
+
+<a href="#contact"
+class="btn btn-primary btn-lg shadow">
+
+<i class="fas fa-paper-plane"></i>
+
+contact me
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+
+<section id="about" data-aos="fade-up">
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8 text-center">
+
+<div class="card p-4">
+
+<h3 class="fw-bold mb-3">
+Hello, I'm Ganesh Jamdade
+</h3>
+
+<p>
+I love creating modern, responsive and user-friendly
+websites using HTML, CSS, JavaScript and Bootstrap.
+</p>
+
+<p>
+Currently I am pursuing a Diploma in Computer Engineering
+and continuously improving my programming and web
+development skills by building real-world projects.
+</p>
+
+<a href="#hire"
+class="btn btn-primary btn-lg shadow mt-3">
+
+<i class="fas fa-paper-plane"></i>
+
+Hire Me
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     SKILLS SECTION
+========================= -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center text-dark mb-5">My Skills</h2>
+
+        <div class="skill-box mb-4">
+            <div class="d-flex justify-content-between">
+                <span class="fw-bold text-dark">HTML</span>
+                <span class="fw-bold text-dark">95%</span>
+            </div>
+            <div class="progress mt-2" style="height:12px;">
+                <div class="progress-bar bg-danger" style="width:95%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box mb-4">
+            <div class="d-flex justify-content-between">
+                <span class="fw-bold text-dark">CSS</span>
+                <span class="fw-bold text-dark">90%</span>
+            </div>
+            <div class="progress mt-2" style="height:12px;">
+                <div class="progress-bar bg-primary" style="width:90%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box mb-4">
+            <div class="d-flex justify-content-between">
+                <span class="fw-bold text-dark">JavaScript</span>
+                <span class="fw-bold text-dark">85%</span>
+            </div>
+            <div class="progress mt-2" style="height:12px;">
+                <div class="progress-bar bg-warning" style="width:85%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box mb-4">
+            <div class="d-flex justify-content-between">
+                <span class="fw-bold text-dark">Bootstrap</span>
+                <span class="fw-bold text-dark">90%</span>
+            </div>
+            <div class="progress mt-2" style="height:12px;">
+                <div class="progress-bar bg-success" style="width:90%;"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- =========================
+     EDUCATION SECTION - TIMELINE
+========================= -->
+
+<section id="education" class="py-5" data-aos="fade-right">
+
+<div class="container">
+
+<h2>Education</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+<div class="card shadow-lg border-0 p-4">
+
+<h3 class="text-primary mb-4">
+<i class="fas fa-graduation-cap"></i> My Education Journey
+</h3>
+
+<!-- Timeline Item 1 -->
+<div class="timeline-item">
+    <span class="timeline-date">2024 - 2027</span>
+    <h4>Diploma in Computer Engineering</h4>
+    <p>Shivaji Polytechnic College, Sangola</p>
+    <p style="color: rgba(255,255,255,0.6);">Currently pursuing with focus on Web Development, Programming, and Software Development.</p>
+</div>
+
+
+
+<!-- Timeline Item 3 -->
+<div class="timeline-item">
+    <span class="timeline-date">2023 - 2024</span>
+    <h4>Secondary Education (10th)</h4>
+    <p>Maharashtra State Board</p>
+    <p style="color: rgba(255,255,255,0.6);">Completed with excellent academic record.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     PROJECTS SECTION - ORIGINAL STYLE WITH LINKS
+========================= -->
+
+<section id="projects" class="py-5 bg-light" data-aos="fade-left">
+
+    <div class="container">
+
+        <h2 class="text-dark">My Projects</h2>
+
+        <div class="row g-4">
+
+<!-- Project 1 -->
+<div class="col-md-4">
+    <div class="card h-100 shadow text-center" style="background: white; color: #111827;">
+        <div class="card-body">
+            <i class="fas fa-user-plus fa-4x text-primary mb-3"></i>
+            <h4>Registration Form</h4>
+            <p>Registration Form with JavaScript Validation and Captcha.</p>
+            <a href="registation.html" target="_blank" class="btn btn-primary">
+                <i class="fas fa-eye me-1"></i>View Project
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 2 -->
+<div class="col-md-4">
+    <div class="card h-100 shadow text-center" style="background: white; color: #111827;">
+        <div class="card-body">
+            <i class="fas fa-calculator fa-4x text-success mb-3"></i>
+            <h4>Calculator</h4>
+            <p>Modern Calculator using HTML, CSS and JavaScript.</p>
+            <a href="calculator.html" target="_blank" class="btn btn-success">
+                <i class="fas fa-eye me-1"></i>View Project
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 3 -->
+<div class="col-md-4">
+    <div class="card h-100 shadow text-center" style="background: white; color: #111827;">
+        <div class="card-body">
+            <i class="fas fa-percent fa-4x text-warning mb-3"></i>
+            <h4>Interest Calculator</h4>
+            <p>Simple and Compound Interest Calculator using JavaScript.</p>
+            <a href="interece22.html" target="_blank" class="btn btn-warning">
+                <i class="fas fa-eye me-1"></i>View Project
+            </a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     CERTIFICATIONS SECTION
+========================= -->
+
+<section id="certifications" class="py-5" data-aos="zoom-in">
+  <div class="container">
+
+    <h2 class="text-center mb-5">Certifications</h2>
+
+    <div class="row g-4">
+
+      <!-- Certificate 1 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow text-center">
+          <img src="WhatsApp Image 2026-06-27 at 2.14.05 PM.jpeg" class="card-img-top" alt="C++ Certificate" style="height:220px; object-fit:cover;">
+          <div class="card-body">
+            <h5>C++ Workshop</h5>
+            <p>Successfully completed C++ Workshop.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal1">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow text-center">
+          <img src="ChatGPT Image Jun 28, 2026, 06_50_36 PM.png" class="card-img-top" alt="ITR Certificate" style="height:220px; object-fit:cover;">
+          <div class="card-body">
+            <h5>ITR Workshop</h5>
+            <p>Completed in ITR Workshop.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal2">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow text-center">
+          <img src="ChatGPT Image Jun 28, 2026, 06_51_40 PM.png" class="card-img-top" alt="Diploma Projects" style="height:220px; object-fit:cover;">
+          <div class="card-body">
+            <h5>Diploma Projects</h5>
+            <p>Completed Diploma All Projects.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal3">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 4 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow text-center">
+          <img src="WhatsApp Image 2026-06-27 at 2.14.05 PM.jpeg" class="card-img-top" alt="Web Development" style="height:220px; object-fit:cover;">
+          <div class="card-body">
+            <h5>Backend developer</h5>
+            <p>Backend  Development Certificate.</p>
+            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certModal4">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================
+     CERTIFICATE MODALS WITH DOWNLOAD BUTTON
+========================= -->
+<!-- Cert Modal 1 -->
+<div class="modal fade" id="certModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-certificate me-2"></i>C++ Workshop Certificate</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="WhatsApp Image 2026-06-27 at 2.14.05 PM.jpeg" alt="C++ Certificate" class="img-fluid rounded" id="certImg1">
+            </div>
+            <div class="modal-footer">
+                <a href="WhatsApp Image 2026-06-27 at 2.14.05 PM.jpeg" download="C++_Workshop_Certificate.jpg" class="btn btn-success">
+                    <i class="fas fa-download me-2"></i>Download Certificate
+                </a>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cert Modal 2 -->
+<div class="modal fade" id="certModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-certificate me-2"></i>ITR Workshop Certificate</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="ChatGPT Image Jun 28, 2026, 06_50_36 PM.png" alt="ITR Certificate" class="img-fluid rounded" id="certImg2">
+            </div>
+            <div class="modal-footer">
+                <a href="ChatGPT Image Jun 28, 2026, 06_50_36 PM.png" download="ITR_Workshop_Certificate.jpg" class="btn btn-success">
+                    <i class="fas fa-download me-2"></i>Download Certificate
+                </a>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cert Modal 3 -->
+<div class="modal fade" id="certModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-certificate me-2"></i>Diploma Projects Certificate</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="ChatGPT Image Jun 28, 2026, 06_51_40 PM.png" alt="Diploma Projects" class="img-fluid rounded" id="certImg3">
+            </div>
+            <div class="modal-footer">
+                <a href="ChatGPT Image Jun 28, 2026, 06_51_40 PM.png" download="Diploma_Projects_Certificate.jpg" class="btn btn-success">
+                    <i class="fas fa-download me-2"></i>Download Certificate
+                </a>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cert Modal 4 -->
+<div class="modal fade" id="certModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-certificate me-2"></i>Web Development Certificate</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="images/web-certificate.jpg" alt="Web Development" class="img-fluid rounded" id="certImg4">
+            </div>
+            <div class="modal-footer">
+                <a href="images/web-certificate.jpg" download="Web_Development_Certificate.jpg" class="btn btn-success">
+                    <i class="fas fa-download me-2"></i>Download Certificate
+                </a>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =========================
+     ACHIEVEMENTS SECTION - WITH COUNTER
+========================= -->
+
+<section id="achievements" class="py-5 bg-light" data-aos="fade-up">
+
+<div class="container">
+
+<h2 class="text-black fw-bold">Achievements</h2>
+
+<div class="row text-center">
+
+<div class="col-md-4">
+
+<h1 class="text-primary fw-bold counter-number" id="counter1">10+</h1>
+
+<h5 class="text-black fw-bold">Projects Completed</h5>
+
+</div>
+
+<div class="col-md-4">
+
+<h1 class="text-success fw-bold counter-number" id="counter2">4+</h1>
+
+<h5 class="text-black fw-bold">Skills Mastered</h5>
+
+</div>
+
+<div class="col-md-4">
+
+<h1 class="text-warning fw-bold counter-number" id="counter3">5+</h1>
+
+<h5 class="text-black fw-bold">Certificates Earned</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+     RESUME SECTION
+========================= -->
+
+<section id="resume" class="py-5" data-aos="zoom-in">
+
+<div class="container text-center">
+
+<h2>Resume</h2>
+
+<p class="lead">
+View or Download My Latest Resume
+</p>
+
+<a href="resume.html"
+target="_blank"
+class="btn btn-primary btn-lg shadow me-3">
+
+<i class="fas fa-eye"></i>
+
+View Resume
+
+</a>
+
+<a href="resume.pdf"
+download
+class="btn btn-success btn-lg shadow">
+
+<i class="fas fa-download"></i>
+
+Download Resume
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+
+<section id="contact" class="py-5" data-aos="fade-up">
+
+<div class="container">
+
+<h2>Contact Me</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+<div class="card shadow-lg border-0">
+
+<div class="card-body p-4">
+
+<form id="contactForm">
+
+<div class="mb-3">
+
+<label class="form-label">
+<i class="fas fa-user"></i>
+Full Name
+</label>
+
+<input
+type="text"
+class="form-control"
+id="name"
+placeholder="Enter Your Name"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+<i class="fas fa-envelope"></i>
+Email
+</label>
+
+<input
+type="email"
+class="form-control"
+id="email"
+placeholder="Enter Your Email"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+<i class="fas fa-comment"></i>
+Message
+</label>
+
+<textarea
+class="form-control"
+id="message"
+rows="5"
+placeholder="Write Your Message"
+required></textarea>
+
+</div>
+
+<!-- CAPTCHA -->
+
+<div class="mb-3">
+
+<label id="captchaQuestion"
+class="fw-bold text-primary"></label>
+<div class="mb-3 text-center">
+
+    <label id="captchaQuestion" class="fw-bold text-primary d-block mb-3"></label>
+
+    <input
+        type="number"
+        id="captchaAnswer"
+        class="form-control mx-auto"
+        placeholder="Enter Answer"
+        required>
+
+</div>
+
+</div>
+
+<!-- SUCCESS MESSAGE -->
+
+<div id="successMessage" style="display:none;"
+class="alert alert-success text-center">
+
+<i class="fas fa-check-circle"></i>
+
+<b>Message Sent Successfully!</b>
+
+<br>
+
+Thank you for contacting me.
+
+</div>
+
+<!-- ERROR MESSAGE -->
+
+<div id="errorMessage" style="display:none;"
+class="alert alert-danger text-center">
+
+<i class="fas fa-times-circle"></i>
+
+Wrong Captcha! Please Try Again.
+
+</div>
+
+<div class="text-center">
+
+<button
+type="submit"
+class="btn btn-primary btn-lg shadow">
+
+<i class="fas fa-paper-plane"></i>
+
+Send Message
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT INFO + SOCIAL LINKS -->
+
+<section class="pb-5">
+
+<div class="container">
+
+<div class="card shadow text-center p-4">
+
+<h3>Contact Information</h3>
+
+<p>
+
+<i class="fas fa-phone text-primary"></i>
+
++91 9272425625
+
+</p>
+
+<p>
+
+<i class="fas fa-envelope text-danger"></i>
+
+jamdadeganesh17@gmail.com
+
+</p>
+
+<p>
+
+<i class="fas fa-location-dot text-success"></i>
+
+Sangola, Maharashtra, India
+
+</p>
+
+<!-- ===== SOCIAL ICONS BELOW CONTACT INFO ===== -->
+<div class="contact-social">
+    <a href="https://github.com/ganeshjamdade" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/ganesh-jamdade" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://instagram.com/ganesh_jamdade" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/ganesh_jamdade" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="text-center py-4">
+
+<h5>
+
+© 2026 Ganesh Jamdade
+
+</h5>
+
+<p>
+
+All Rights Reserved | Made with <i class="fas fa-heart text-danger"></i> by Ganesh Jamdade
+
+</p>
+
+</footer>
+
+<!-- WHATSAPP -->
+
+<a
+href="https://wa.me/919272425625"
+target="_blank"
+class="whatsapp-btn">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- BACK TO TOP -->
+
+<button
+id="topBtn"
+onclick="topFunction()">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- ===========================
+     JAVASCRIPT FILES
+=========================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+
+/* ===========================
+   AOS Animation
+=========================== */
+
+AOS.init({
+    duration:1000,
+    once:true
+});
+
+/* ===========================
+   Typing Animation
+=========================== */
+
+new Typed("#typing",{
+    strings:[
+        "Frontend Developer",
+        "Web Designer",
+        "JavaScript Learner",
+        "Student at Shivaji Polytechnic"
+    ],
+    typeSpeed:100,
+    backSpeed:50,
+    loop:true
+});
+
+/* ===========================
+   Captcha
+=========================== */
+
+let correctAnswer;
+
+function generateCaptcha(){
+
+    let num1=Math.floor(Math.random()*10)+1;
+    let num2=Math.floor(Math.random()*10)+1;
+
+    correctAnswer=num1+num2;
+
+    document.getElementById("captchaQuestion").innerHTML=
+    "Captcha : " + num1 + " + " + num2 + " = ?";
+
+}
+
+generateCaptcha();
+
+/* ===========================
+   Contact Form
+=========================== */
+
+document.getElementById("contactForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let userAnswer=
+parseInt(document.getElementById("captchaAnswer").value);
+
+let success=
+document.getElementById("successMessage");
+
+let error=
+document.getElementById("errorMessage");
+
+success.style.display="none";
+error.style.display="none";
+
+if(userAnswer===correctAnswer){
+
+success.style.display="block";
+
+this.reset();
+
+generateCaptcha();
+
+setTimeout(function(){
+
+success.style.display="none";
+
+},4000);
+
+}
+else{
+
+error.style.display="block";
+
+document.getElementById("captchaAnswer").value="";
+
+generateCaptcha();
+
+setTimeout(function(){
+
+error.style.display="none";
+
+},3000);
+
+}
+
+});
+
+/* ===========================
+   Back To Top
+=========================== */
+
+window.onscroll=function(){
+
+let btn=document.getElementById("topBtn");
+
+if(document.documentElement.scrollTop>300){
+
+btn.style.display="block";
+
+}
+else{
+
+btn.style.display="none";
+
+}
+
+};
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+/* ===========================
+   Scroll Progress Bar
+=========================== */
+
+window.addEventListener("scroll", function() {
+    let scrollTop = document.documentElement.scrollTop;
+    let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let progress = (scrollTop / scrollHeight) * 100;
+    document.getElementById("scrollProgress").style.width = progress + "%";
+});
+
+/* ===========================
+   Counter Animation
+=========================== */
+
+function animateCounter(element, target, suffix = '') {
+    let current = 0;
+    const increment = Math.ceil(target / 30);
+    const interval = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(interval);
+        }
+        element.textContent = current + suffix;
+    }, 50);
+}
+
+// Use Intersection Observer for counters
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.id;
+            if (id === 'counter1') animateCounter(entry.target, 10, '+');
+            else if (id === 'counter2') animateCounter(entry.target, 4, '+');
+            else if (id === 'counter3') animateCounter(entry.target, 5, '+');
+            counterObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.counter-number').forEach(el => {
+    counterObserver.observe(el);
+});
+
+/* ===========================
+   VISITOR COUNTER
+=========================== */
+
+function getVisitorCount() {
+    let count = localStorage.getItem('visitorCount');
+    if (count === null) {
+        count = 1234; // Starting number
+    } else {
+        count = parseInt(count) + 1;
+    }
+    localStorage.setItem('visitorCount', count);
+    return count;
+}
+
+// Animate visitor counter
+function animateVisitorCount(target) {
+    const element = document.getElementById('visitorCount');
+    let current = 0;
+    const increment = Math.ceil(target / 40);
+    const interval = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(interval);
+        }
+        element.textContent = current.toLocaleString();
+    }, 30);
+}
+
+// Initialize visitor counter
+const totalVisitors = getVisitorCount();
+animateVisitorCount(totalVisitors);
+
+</script>
+
+<!-- ===========================
+     GOOGLE TRANSLATE
+=========================== -->
+
+<script>
+
+function googleTranslateElementInit(){
+
+new google.translate.TranslateElement(
+
+{
+
+pageLanguage:'en',
+
+includedLanguages:'en,mr,hi',
+
+layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+
+},
+
+'google_translate_element'
+
+);
+
+}
+
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- ===========================
+     EXTRA EFFECTS
+=========================== -->
+
+<script>
+
+/* Smooth Scroll */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener("click",function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+});
+
+});
+
+/* Navbar Shadow */
+
+window.addEventListener("scroll",function(){
+
+let navbar=document.querySelector(".navbar");
+
+if(window.scrollY>50){
+
+navbar.classList.add("shadow");
+
+}
+else{
+
+navbar.classList.remove("shadow");
+
+}
+
+});
+
+/* Loading Animation */
+
+window.addEventListener("load",function(){
+
+document.body.style.opacity="1";
+
+});
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener("click",function(e){
+
+let target=document.querySelector(this.getAttribute("href"));
+
+if(target){
+
+e.preventDefault();
+
+target.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+});
+
+});
+
+
+// Navbar Shadow
+
+window.addEventListener("scroll",function(){
+
+let navbar=document.querySelector(".navbar");
+
+if(window.scrollY>50){
+
+navbar.classList.add("shadow");
+
+}
+else{
+
+navbar.classList.remove("shadow");
+
+}
+
+});
+
+
+
+let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+let menu=document.getElementById("menu");
+
+if(menu.classList.contains("show")){
+
+let navbar=bootstrap.Collapse.getInstance(menu);
+
+if(navbar){
+navbar.hide();
+}
+
+}
+
+});
+
+});
+
+
+// Loading Animation
+
+window.addEventListener("load",function(){
+
+document.body.style.opacity="1";
+
+});
+
+// Professional Cursor Effect
+
+document.addEventListener("mousemove",function(e){
+
+document.body.style.setProperty(
+"--x",
+e.clientX+"px"
+);
+
+document.body.style.setProperty(
+"--y",
+e.clientY+"px"
+);
+
+});
+// Auto Year Footer
+
+document.querySelector("footer h5").innerHTML =
+"© " + new Date().getFullYear() + " Ganesh Jamdade";
+
+</script>
+
+</body>
+
+</html>

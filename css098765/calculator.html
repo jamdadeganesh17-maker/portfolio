@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <style> 
+        table{ 
+            background-color: aqua; 
+            border-radius: 10px; 
+        } 
+        .arith 
+        { 
+            background-color: brown; 
+            color: white; 
+        } 
+        button{ 
+            width: 100%; 
+        } 
+ 
+        #equal{ 
+            background-color: blueviolet; 
+        }     
+       input{ 
+        text-align: right; 
+       } 
+    </style> 
+</head> 
+ 
+<body> 
+    <center>  
+    <div> 
+        <table cellpadding="3" cellspacing="3"> 
+             <tr> 
+                <td colspan="4">  
+                    <input type="text" name="" id="display" placeholder="" readonly>    
+                </td>            
+            </tr> 
+            <tr> 
+                
+                
+                <td> <button onclick="append('7')">7</button>   </td> 
+                <td> <button onclick="append('8')">8</button></td> 
+                <td> <button onclick="append('9')">9</button></td> 
+                <td> <button class="arith" onclick="append('/')">/</button></td> 
+            </tr>  
+            <tr> 
+                <td> <button onclick="append('4')">4</button>   </td> 
+                <td> <button onclick="append('5')">5</button></td> 
+                <td> <button onclick="append('6')">6</button></td> 
+                <td> <button  class="arith" onclick="append('*')">*</button></td> 
+            </tr> 
+ 
+            <tr> 
+                <td> <button onclick="append('3')">3</button>   </td> 
+                <td> <button onclick="append('2')">2</button></td> 
+                <td> <button onclick="append('1')">1</button></td> 
+                <td> <button  class="arith" onclick="append('-')">-</button></td> 
+            </tr> 
+ 
+            <tr> 
+                <td> <button onclick="append('.')">.</button>   </td> 
+                <td> <button onclick="append('0')">0</button></td> 
+                <td> <button onclick="clear_display()">C</button></td> 
+                <td> <button  class="arith" onclick="append('+')">+</button></td> 
+            </tr> 
+ 
+            <tr> 
+                <td colspan="4" > <button id="equal" onclick="calculate()">=</button>   </td> 
+                
+            </tr> 
+        </table> 
+ 
+    </div> 
+</center> 
+<script> 
+    function append(value) 
+    { 
+        document.getElementById("display").value += value 
+    } 
+    function calculate() 
+    { 
+        var expression = document.getElementById("display").value; 
+        document.getElementById("display").value = eval(expression); 
+    } 
+    function clear_display() 
+    { 
+        document.getElementById("display").value = ""; 
+    } 
+</script> 
+</body> 
+</html>
